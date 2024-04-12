@@ -1,5 +1,5 @@
-# [Social Media References based on Scalable Vector Graphics (SVG) Icons for Typst](https://github.com/Bi0T1N/typst-socialhub-svg)
-The `socialhub-svg` package is designed to help you create your curriculum vitae (CV). It allows you to easily reference your social media profiles with the typical icon of the service plus a link to your profile.
+# [Social Media References based on Scalable Vector Graphics (SVG) Icons for Typst](https://github.com/Bi0T1N/typst-iconic-salmon-svg)
+The `iconic-salmon-svg` package is designed to help you create your curriculum vitae (CV). It allows you to easily reference your social media profiles with the typical icon of the service plus a link to your profile.
 
 ## Features
 - Support for popular social media, developer and career platforms
@@ -12,19 +12,19 @@ The `socialhub-svg` package is designed to help you create your curriculum vitae
 ### Using Typst's package manager
 You can install the library using the [typst packages](https://github.com/typst/packages):
 ```typst
-#import "@preview/socialhub-svg:1.0.0": *
+#import "@preview/iconic-salmon-svg:1.0.0": *
 ```
 
 ### Install manually
-Put the `socialhub-svg.typ` file in your project directory and import it:
+Put the `iconic-salmon-svg.typ` file in your project directory and import it:
 ```typst
-#import "socialhub-svg.typ": *
+#import "iconic-salmon-svg.typ": *
 ```
 
 ### Minimal Example
 ```typst
-// #import "@preview/socialhub-svg:1.0.0": github-info, gitlab-info
-#import "socialhub-svg.typ": github-info, gitlab-info
+// #import "@preview/iconic-salmon-svg:1.0.0": github-info, gitlab-info
+#import "iconic-salmon-svg.typ": github-info, gitlab-info
 
 This project was created by #github-info("Bi0T1N"). You can also find me on #gitlab-info("GitLab", rgb("#811052"), url: "https://gitlab.com/Bi0T1N").
 ```
@@ -37,3 +37,7 @@ Feel free to open an issue or a pull request if you find any problems or have an
 
 ## License
 This library is licensed under the MIT license. Feel free to use it in your project.
+
+## Trademark Disclaimer
+Product names, logos, brands and other trademarks referred to in this project are the property of their respective trademark holders.  
+These trademark holders are not affiliated with this Typst library, nor are the authors officially endorsed by them, nor do the authors claim ownership of these trademarks.

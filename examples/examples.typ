@@ -1,4 +1,4 @@
-#import "socialhub-svg.typ": *
+#import "../iconic-salmon-svg.typ": *
 
 = Usage Examples
 == Facebook

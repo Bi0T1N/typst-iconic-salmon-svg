@@ -180,7 +180,7 @@
 #let stackexchange-info(
   name,
   url: "https://stackexchange.com/",
-  filename: "se-icon.svg",
+  filename: "Stack_Exchange_icon.svg",
   ..args
 ) = {
   icon-link-generator(name, url, filename, ..args)
@@ -198,7 +198,7 @@
 #let discord-info(
   name,
   url: "https://discord.com/",
-  filename: "icon_clyde_blurple_RGB.svg",
+  filename: "Discord_icon_clyde_blurple_RGB.svg",
   ..args
 ) = {
   icon-link-generator(name, url, filename, ..args)
