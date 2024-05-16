@@ -102,3 +102,8 @@
 #orcid-info("0000-0002-1825-0097")
 #h(1cm)
 #orcid-info("Josiah Carberry", url: "https://orcid.org/0000-0002-1825-0097", green)
+
+== TryHackMe
+#tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N")
+#h(1cm)
+#tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N", filename: "tryhackme_logo_icon_249349.svg")

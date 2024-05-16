@@ -63,3 +63,7 @@ https://freebiesupply.com/logos/xing-icon-logo/
 
 ## YouTube
 https://commons.wikimedia.org/wiki/File:YouTube_full-color_icon_(2017).svg
+
+## TryHackMe
+https://github.com/2factorauth/twofactorauth/blob/master/img/t/tryhackme.com.svg
+https://icon-icons.com/icon/tryhackme-logo/249349

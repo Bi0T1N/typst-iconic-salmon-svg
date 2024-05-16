@@ -230,3 +230,12 @@
 ) = {
   icon-link-generator(name, url, filename, ..args)
 }
+
+#let tryhackme-info(
+  name,
+  url: "https://tryhackme.com/p/",
+  filename: "tryhackme.com.svg",
+  ..args
+) = {
+  icon-link-generator(name, url, filename, ..args)
+}

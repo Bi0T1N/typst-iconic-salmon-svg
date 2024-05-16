@@ -1,6 +1,6 @@
 [package]
 name = "iconic-salmon-svg"
-version = "1.0.0"
+version = "1.1.0"
 repository = "https://github.com/Bi0T1N/typst-iconic-salmon-svg"
 entrypoint = "iconic-salmon-svg.typ"
 authors = ["Nico Neumann (Bi0T1N)"]
