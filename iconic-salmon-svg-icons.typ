@@ -50,3 +50,9 @@
 #let orcid-icon(file: "svg/ORCID_iD.svg", height: 0.9em) = icon(file, height)
 
 #let tryhackme-icon(file: "svg/tryhackme.com.svg", height: 0.9em) = icon(file, height)
+
+#let mastodon-icon(file: "svg/mastodon-logo-purple.svg", height: 0.9em) = icon(file, height)
+
+#let researchgate-icon(file: "svg/ResearchGate_icon_SVG.svg", height: 0.9em) = icon(file, height)
+
+#let google-scholar-icon(file: "svg/Google_Scholar_logo.svg", height: 0.9em) = icon(file, height)

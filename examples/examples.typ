@@ -115,3 +115,16 @@
 #h(1cm)
 #let custom_tryhackme_icon_mini() = icon.tryhackme-icon(file: "svg/tryhackme_logo_icon_249349.svg", height: 0.6em)
 #tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N", icon_func: custom_tryhackme_icon_mini)
+
+== Mastodon
+#mastodon-info("Electronic Frontier Foundation", url: "https://mastodon.social/@eff")
+#h(1cm)
+#mastodon-info("wikiRandomImgs")
+
+== ResearchGate
+#researchgate-info("Josiah-Carberry", url: "https://www.researchgate.net/profile/Josiah-Carberry")
+#h(1cm)
+#researchgate-info("Josiah Carberry", url: "https://www.researchgate.net/profile/Josiah-Carberry", green)
+
+== Google Scholar
+#google-scholar-info("David Campbell", url: "https://scholar.google.com/citations?user=icXJxqwAAAAJ")

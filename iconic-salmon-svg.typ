@@ -27,7 +27,7 @@
     )
 
     let clickable_link
-    if url.ends-with(regex("\.(com|org|net)\/@?$")) {
+    if url.ends-with(regex("\.(com|org|net|social)\/@?$")) {
       // links where the name is only appended, i.e. https://github.com/Bi0T1N
       clickable_link = url + name
     } else {
@@ -36,7 +36,8 @@
     }
 
     // unify all links
-    if not clickable_link.ends-with("/") {
+    // Google Scholar doesn't find the profile if a slash is appended -.-'
+    if not clickable_link.ends-with("/") and not clickable_link.contains("scholar.google") {
       clickable_link = clickable_link + "/"
     }
 
@@ -234,6 +235,33 @@
   name,
   url: "https://tryhackme.com/p/",
   icon_func: icon.tryhackme-icon,
+  ..args
+) = {
+  icon-link-generator(name, url, icon_func, ..args)
+}
+
+#let mastodon-info(
+  name,
+  url: "https://mastodon.social/@",
+  icon_func: icon.mastodon-icon,
+  ..args
+) = {
+  icon-link-generator(name, url, icon_func, ..args)
+}
+
+#let researchgate-info(
+  name,
+  url: "https://www.researchgate.net/profile/",
+  icon_func: icon.researchgate-icon,
+  ..args
+) = {
+  icon-link-generator(name, url, icon_func, ..args)
+}
+
+#let google-scholar-info(
+  name,
+  url: "https://scholar.google.com/citations?user=",
+  icon_func: icon.google-scholar-icon,
   ..args
 ) = {
   icon-link-generator(name, url, icon_func, ..args)
