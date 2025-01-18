@@ -7,13 +7,14 @@ The package name is a combination of the acronym *SociAL Media icONs* and the wo
 - Uniform design for all entries
 - Based on publicly available SVG symbols
 - Easy to use
+- Written flexibly, allowing you to use the icons separately, replace them with local copies or generate links for websites that are not included
 - Allows the customization of the look (extra args are passed to [`text`](https://typst.app/docs/reference/text/text/))
 
 ## Usage
 ### Using Typst's package manager
 You can install the library using the [typst packages](https://github.com/typst/packages):
 ```typst
-#import "@preview/iconic-salmon-svg:1.0.0": *
+#import "@preview/iconic-salmon-svg:2.0.1": *
 ```
 
 ### Install manually
@@ -24,7 +25,7 @@ Put the `iconic-salmon-svg.typ` file in your project directory and import it:
 
 ### Minimal Example
 ```typst
-// #import "@preview/iconic-salmon-svg:1.0.0": github-info, gitlab-info
+// #import "@preview/iconic-salmon-svg:2.0.1": github-info, gitlab-info
 #import "iconic-salmon-svg.typ": github-info, gitlab-info
 
 This project was created by #github-info("Bi0T1N"). You can also find me on #gitlab-info("GitLab", rgb("#811052"), url: "https://gitlab.com/Bi0T1N").
