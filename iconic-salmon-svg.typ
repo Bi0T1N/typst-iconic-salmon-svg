@@ -107,7 +107,7 @@
 
 #let xing-info(
   name,
-  url: "https://www.xing.com/",
+  url: "https://www.xing.com/profile/",
   icon_func: icon.xing-icon,
   ..args
 ) = {
