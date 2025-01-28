@@ -38,9 +38,11 @@
 #linkedin-info("BMW Group", url: "https://www.linkedin.com/company/bmw-group/", rgb("0166B1"))
 
 == XING
-#xing-info("CLAAS", url: "https://www.xing.com/pages/claas")
+#xing-info("YOURNAME")
 #h(1cm)
-#xing-info("ABB Deutschland", url: "https://www.xing.com/pages/abbde")
+#xing-info-company("abbde")
+#h(1cm)
+#xing-info-company("ABB Deutschland", url: "https://www.xing.com/pages/abbde")
 
 == GitHub
 #github-info("Bi0T1N")
