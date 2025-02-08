@@ -35,7 +35,13 @@
 #vimeo-info("Open Robotics", url: "https://vimeo.com/osrfoundation/")
 
 == LinkedIn
-#linkedin-info("BMW Group", url: "https://www.linkedin.com/company/bmw-group/", rgb("0166B1"))
+#linkedin-info("lexfridman")
+#h(1cm)
+#linkedin-info("Lex Fridman", url: "https://www.linkedin.com/in/lexfridman/")
+\
+#linkedin-info-company("Oxford University Innovation", url: "https://uk.linkedin.com/company/oxford-university-innovation/")
+#h(1cm)
+#linkedin-info-company("bmw-group", rgb("#0166B1"))
 
 == XING
 #xing-info("Pooyan_Aliuos")

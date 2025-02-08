@@ -27,7 +27,7 @@
     )
 
     let clickable_link
-    if url.ends-with(regex("\.(com|org|net|social)\/(@|profile|pages)?/?$")) {
+    if url.ends-with(regex("\.(com|org|net|social)\/(@|profile|pages|in|company)?\/?$")) {
       // links where the name is only appended, i.e. https://github.com/Bi0T1N
       clickable_link = url + name
     } else {
@@ -98,12 +98,20 @@
 
 #let linkedin-info(
   name,
-  url: "https://www.linkedin.com/",
+  url: "https://www.linkedin.com/in/",
   icon-func: icon.linkedin-icon,
   ..args
 ) = {
   icon-link-generator(name, url, icon-func, ..args)
 }
+
+#let linkedin-info-company(
+  name,
+  url: "https://www.linkedin.com/company/",
+  icon-func: icon.linkedin-icon,
+  ..args
+) = {
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let xing-info(
