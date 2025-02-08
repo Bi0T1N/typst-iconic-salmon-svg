@@ -38,11 +38,15 @@
 #linkedin-info("BMW Group", url: "https://www.linkedin.com/company/bmw-group/", rgb("0166B1"))
 
 == XING
-#xing-info("YOURNAME")
+#xing-info("Pooyan_Aliuos")
+#h(1cm)
+#xing-info("Alexander Kühn", url: "https://www.xing.com/profile/Alexander_Kuehn29")
+\
+#xing-info-company("ABB Deutschland", url: "https://www.xing.com/pages/abbde")
+#h(1cm)
+#xing-info-company("CLAAS", url: "https://www.xing.com/pages/claas/", rgb("#FE0000"))
 #h(1cm)
 #xing-info-company("abbde")
-#h(1cm)
-#xing-info-company("ABB Deutschland", url: "https://www.xing.com/pages/abbde")
 
 == GitHub
 #github-info("Bi0T1N")
