@@ -8,7 +8,7 @@
 #facebook-info("NEFFEX", url: "https://www.facebook.com/Neffexmusic", blue)
 #h(1cm)
 #let custom_facebook_icon_size() = icon.facebook-icon(height: 0.5em)
-#facebook-info("NEFFEX", url: "https://www.facebook.com/Neffexmusic", icon_func: custom_facebook_icon_size)
+#facebook-info("NEFFEX", url: "https://www.facebook.com/Neffexmusic", icon-func: custom_facebook_icon_size)
 
 == Instagram
 #instagram-info("janlo.pulling_pictures")
@@ -113,10 +113,10 @@
 #tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N")
 #h(1cm)
 #let custom_tryhackme_icon_large() = icon.tryhackme-icon(file: "svg/tryhackme_logo_icon_249349.svg", height: 3.3em)
-#tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N", icon_func: custom_tryhackme_icon_large)
+#tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N", icon-func: custom_tryhackme_icon_large)
 #h(1cm)
 #let custom_tryhackme_icon_mini() = icon.tryhackme-icon(file: "svg/tryhackme_logo_icon_249349.svg", height: 0.6em)
-#tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N", icon_func: custom_tryhackme_icon_mini)
+#tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N", icon-func: custom_tryhackme_icon_mini)
 
 == Mastodon
 #mastodon-info("Electronic Frontier Foundation", url: "https://mastodon.social/@eff")

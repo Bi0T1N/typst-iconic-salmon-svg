@@ -5,12 +5,12 @@
 ///
 /// - name (str): The visible name of the clickable link
 /// - url (str): The URL to the website (it is assumed to start with the http/https scheme)
-/// - icon_provider (function): The function that provides the associated icon
+/// - icon-provider (function): The function that provides the associated icon
 /// -> content
 #let icon-link-generator(
   name,
   url,
-  icon_provider,
+  icon-provider,
   ..args
 ) = {
     if name.len() == 0 {
@@ -42,7 +42,7 @@
     }
 
     // content
-      icon_provider()
+      icon-provider()
       " "
       link(clickable_link)[#styled_text]
 }
@@ -54,224 +54,225 @@
 #let facebook-info(
   name,
   url: "https://www.facebook.com/",
-  icon_func: icon.facebook-icon,
+  icon-func: icon.facebook-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let instagram-info(
   name,
   url: "https://www.instagram.com/",
-  icon_func: icon.instagram-icon,
+  icon-func: icon.instagram-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let tiktok-info(
   name,
   url: "https://www.tiktok.com/@",
-  icon_func: icon.tiktok-icon,
+  icon-func: icon.tiktok-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let youtube-info(
   name,
   url: "https://www.youtube.com/@",
-  icon_func: icon.youtube-icon,
+  icon-func: icon.youtube-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let vimeo-info(
   name,
   url: "https://vimeo.com/",
-  icon_func: icon.vimeo-icon,
+  icon-func: icon.vimeo-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let linkedin-info(
   name,
   url: "https://www.linkedin.com/",
-  icon_func: icon.linkedin-icon,
+  icon-func: icon.linkedin-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
+}
 }
 
 #let xing-info(
   name,
   url: "https://www.xing.com/profile/",
-  icon_func: icon.xing-icon,
+  icon-func: icon.xing-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let xing-info-company(
   name,
   url: "https://www.xing.com/pages/",
-  icon_func: icon.xing-icon,
+  icon-func: icon.xing-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let github-info(
   name,
   url: "https://github.com/",
-  icon_func: icon.github-icon,
+  icon-func: icon.github-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let gitlab-info(
   name,
   url: "https://gitlab.com/",
-  icon_func: icon.gitlab-icon,
+  icon-func: icon.gitlab-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let bitbucket-info(
   name,
   url: "https://bitbucket.org/",
-  icon_func: icon.bitbucket-icon,
+  icon-func: icon.bitbucket-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let codeberg-info(
   name,
   url: "https://codeberg.org/",
-  icon_func: icon.codeberg-icon,
+  icon-func: icon.codeberg-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let sourceforge-info(
   name,
   url: "https://sourceforge.net/",
-  icon_func: icon.sourceforge-icon,
+  icon-func: icon.sourceforge-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let docker-info(
   name,
   url: "https://hub.docker.com/",
-  icon_func: icon.docker-icon,
+  icon-func: icon.docker-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let stackoverflow-info(
   name,
   url: "https://stackoverflow.com/",
-  icon_func: icon.stackoverflow-icon,
+  icon-func: icon.stackoverflow-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let stackexchange-info(
   name,
   url: "https://stackexchange.com/",
-  icon_func: icon.stackexchange-icon,
+  icon-func: icon.stackexchange-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let skype-info(
   name,
   url: "https://www.skype.com/",
-  icon_func: icon.skype-icon,
+  icon-func: icon.skype-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let discord-info(
   name,
   url: "https://discord.com/",
-  icon_func: icon.discord-icon,
+  icon-func: icon.discord-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let twitter-info(
   name,
   url: "https://twitter.com/",
-  icon_func: icon.twitter-icon,
+  icon-func: icon.twitter-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let x-twitter-info(
   name,
   url: "https://x.com/",
-  icon_func: icon.x-twitter-icon,
+  icon-func: icon.x-twitter-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let orcid-info(
   name,
   url: "https://orcid.org/",
-  icon_func: icon.orcid-icon,
+  icon-func: icon.orcid-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let tryhackme-info(
   name,
   url: "https://tryhackme.com/p/",
-  icon_func: icon.tryhackme-icon,
+  icon-func: icon.tryhackme-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let mastodon-info(
   name,
   url: "https://mastodon.social/@",
-  icon_func: icon.mastodon-icon,
+  icon-func: icon.mastodon-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let researchgate-info(
   name,
   url: "https://www.researchgate.net/profile/",
-  icon_func: icon.researchgate-icon,
+  icon-func: icon.researchgate-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
 
 #let google-scholar-info(
   name,
   url: "https://scholar.google.com/citations?user=",
-  icon_func: icon.google-scholar-icon,
+  icon-func: icon.google-scholar-icon,
   ..args
 ) = {
-  icon-link-generator(name, url, icon_func, ..args)
+  icon-link-generator(name, url, icon-func, ..args)
 }
