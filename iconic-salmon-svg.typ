@@ -27,7 +27,7 @@
     )
 
     let clickable_link
-    if url.ends-with(regex("\.(com|org|net|social)\/@?$")) {
+    if url.ends-with(regex("\.(com|org|net|social)\/(@|profile|pages)?/?$")) {
       // links where the name is only appended, i.e. https://github.com/Bi0T1N
       clickable_link = url + name
     } else {
@@ -107,7 +107,16 @@
 
 #let xing-info(
   name,
-  url: "https://www.xing.com/",
+  url: "https://www.xing.com/profile/",
+  icon_func: icon.xing-icon,
+  ..args
+) = {
+  icon-link-generator(name, url, icon_func, ..args)
+}
+
+#let xing-info-company(
+  name,
+  url: "https://www.xing.com/pages/",
   icon_func: icon.xing-icon,
   ..args
 ) = {
