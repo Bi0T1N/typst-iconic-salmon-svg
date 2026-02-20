@@ -1,6 +1,8 @@
 #import "../iconic-salmon-svg.typ": *
 #import "../iconic-salmon-svg-icons.typ" as icon
 
+#set document(title: "Examples")
+
 = Usage Examples
 == Facebook
 #facebook-info("NEFFEX", url: "https://www.facebook.com/Neffexmusic/")

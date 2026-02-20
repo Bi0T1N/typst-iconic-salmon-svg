@@ -9,6 +9,7 @@ The package name is a combination of the acronym *SociAL Media icONs* and the wo
 - Easy to use
 - Written flexibly, allowing you to use the icons separately, replace them with local copies or generate links for websites that are not included
 - Allows the customization of the look (extra args are passed to [`text`](https://typst.app/docs/reference/text/text/))
+- PDF/UA-1 compliant (accessibility)
 
 ## Usage
 ### Using Typst's package manager

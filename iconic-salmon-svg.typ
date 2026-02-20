@@ -42,9 +42,9 @@
     }
 
     // content
-      icon-provider()
-      " "
-      link(clickable_link)[#styled_text]
+    pdf.artifact(icon-provider())
+    " "
+    link(clickable_link)[#styled_text]
 }
 
 
