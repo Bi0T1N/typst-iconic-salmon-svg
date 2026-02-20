@@ -21,30 +21,24 @@
       panic("The url must contain at least one character")
     }
 
-    let styled_text = text(
+    let styled-text = text(
       name,
       ..args
     )
 
-    let clickable_link
+    let clickable-link
     if url.ends-with(regex("\.(com|org|net|social)\/(@|profile|pages|in|company)?\/?$")) {
       // links where the name is only appended, i.e. https://github.com/Bi0T1N
-      clickable_link = url + name
+      clickable-link = url + name
     } else {
       // links where the profile link is more complicated, i.e. https://stackoverflow.com/users/20742512/bi0t1n
-      clickable_link = url
-    }
-
-    // unify all links
-    // Google Scholar doesn't find the profile if a slash is appended -.-'
-    if not clickable_link.ends-with("/") and not clickable_link.contains("scholar.google") {
-      clickable_link = clickable_link + "/"
+      clickable-link = url
     }
 
     // content
       icon-provider()
       " "
-      link(clickable_link)[#styled_text]
+      link(clickable-link)[#styled-text]
 }
 
 

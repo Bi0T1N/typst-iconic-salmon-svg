@@ -7,8 +7,8 @@
 #h(1cm)
 #facebook-info("NEFFEX", url: "https://www.facebook.com/Neffexmusic", blue)
 #h(1cm)
-#let custom_facebook_icon_size() = icon.facebook-icon(height: 0.5em)
-#facebook-info("NEFFEX", url: "https://www.facebook.com/Neffexmusic", icon-func: custom_facebook_icon_size)
+#let custom-facebook-icon-size() = icon.facebook-icon(height: 0.5em)
+#facebook-info("NEFFEX", url: "https://www.facebook.com/Neffexmusic", icon-func: custom-facebook-icon-size)
 
 == Instagram
 #instagram-info("janlo.pulling_pictures")
@@ -60,6 +60,10 @@
 #github-info("Bi0T1N", rgb("#ffcc00"))
 #h(1cm)
 #github-info("Bi0T1N", green)
+
+#github-info(url: "https://github.com/Bi0T1N/typst-iconic-salmon-svg?tab=MIT-1-ov-file", "typst-iconic-salmon-svg's license", rgb("#ffcc00"))
+#h(1cm)
+#github-info(url: "https://github.com/Bi0T1N/typst-iconic-salmon-svg#usage", "typst-iconic-salmon-svg's usage", green)
 
 == GitLab
 #gitlab-info("Bi0T1N")
@@ -122,11 +126,11 @@
 == TryHackMe
 #tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N")
 #h(1cm)
-#let custom_tryhackme_icon_large() = icon.tryhackme-icon(file: "svg/tryhackme_logo_icon_249349.svg", height: 3.3em)
-#tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N", icon-func: custom_tryhackme_icon_large)
+#let custom-tryhackme-icon-large() = icon.tryhackme-icon(file: "svg/tryhackme_logo_icon_249349.svg", height: 3.3em)
+#tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N", icon-func: custom-tryhackme-icon-large)
 #h(1cm)
-#let custom_tryhackme_icon_mini() = icon.tryhackme-icon(file: "svg/tryhackme_logo_icon_249349.svg", height: 0.6em)
-#tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N", icon-func: custom_tryhackme_icon_mini)
+#let custom-tryhackme-icon-mini() = icon.tryhackme-icon(file: "svg/tryhackme_logo_icon_249349.svg", height: 0.6em)
+#tryhackme-info("Bi0T1N", url: "https://tryhackme.com/p/Bi0T1N", icon-func: custom-tryhackme-icon-mini)
 
 == Mastodon
 #mastodon-info("Electronic Frontier Foundation", url: "https://mastodon.social/@eff")
